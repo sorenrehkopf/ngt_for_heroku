@@ -1,0 +1,225 @@
+
+@keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position:  100% 0; }
+}
+.bkgrnd1{
+	background-image:url(http://walldiskpaper.com/wp-content/uploads/2014/10/Space-Wallpaper-1920x1080.jpg);
+	background-position: 0px 0px;
+	background-size: 2500px 1080px;
+	animation: animatedBackground 150s linear infinite alternate;
+}
+.bkgrnd2{
+	background-image:url(http://www.hdwallsource.com/img/2015/6/stunning-space-wallpaper-45214-46411-hd-wallpapers.jpg);
+	background-position: 0px 0px;
+	background-size: 2500px 1080px;
+	animation: animatedBackground 150s linear infinite alternate;
+}
+.bkgrnd3{
+	background-image:url(http://cdn.wonderfulengineering.com/wp-content/uploads/2014/04/space-wallpapers-2.jpg);
+	background-position: 0px 0px;
+	background-size: 2500px 1080px;
+	animation: animatedBackground 150s linear infinite alternate;
+}
+.bkgrnd4{
+	background-image:url(http://images6.fanpop.com/image/photos/32800000/space-wallpaper-space-32897723-1920-1080.jpg);
+	background-position: 0px 0px;
+	background-size: 2500px 1080px;
+	animation: animatedBackground 150s linear infinite alternate;
+}
+.bkgrnd5{
+	background-image:url(https://newevolutiondesigns.com/images/freebies/space-wallpaper-5.jpg);
+	background-position: 0px 0px;
+	background-size: 2500px 1080px;
+	animation: animatedBackground 150s linear infinite alternate;
+}
+
+#board{
+	top: 150px;
+	text-align: center;
+	background-color: rgba(90, 90, 90, .55);
+	position: center;
+	border-radius: 10px 10px 10px 10px;
+	height:280px;
+	float:left;
+}
+
+.page-header{
+	color:rgba(10, 10, 10, .9);
+	font-family:Bowlby One;
+}
+
+#question{
+	margin-top: 30px;
+	margin-bottom: -10px;
+	color:black;
+	font-family: Comfortaa;
+}
+#textDisplay{
+	color:rgba(10, 10, 10, .8);
+	font-family: Comfortaa;
+}
+
+.answers{
+	position:center;
+	display: none;
+}
+#answers .btn{
+	display:block;
+	margin-left:20%;
+	width:25% ;
+	margin-top: 7.5%;
+}
+#startbtn{
+	margin-top: 6%;
+}
+#answers .answers{
+	height:90%;
+}
+.btn{
+	width:50% ;
+	background-color: rgba(150, 150, 150, .7);
+	font-family: unica one;
+	color: white;
+}
+.progress{
+	opacity:.6;
+	position:absolute;
+	display:none;
+	bottom:-12px;
+	margin-left:18%;
+	width:60%;
+}
+.progress-bar{
+	width: 0%;
+}
+#dipdiv{
+	display:none;
+	margin-top:28%;
+}
+#findiv{
+	display:none;
+	margin-top:5%;
+}
+.endImg{
+	opacity:.8;
+	max-width:300px;
+	max-height:200px;
+}
+#postbtns{
+	opacity:.9;
+	position:absolute;
+	text-align: left;
+	display:none;
+	bottom:100px;
+	margin-left:31%;
+	width:100%;
+	
+}
+#postbtns .btn{
+	width:35%;
+	display:inline;
+	position:center;
+}
+label{
+	color:rgba(0, 0, 0, 1);
+	display:block;
+}
+#ldrboard{
+	text-align: center;
+	background-color: rgba(90, 90, 90, .55);
+	position: center;
+	border-radius: 10px 10px 10px 10px;
+	height:110%;
+	float:right;
+	color:rgba(10, 10, 10, .9);
+	top:15px;
+	right:-40px;
+	font-family:Bowlby One;
+	display:none;
+	max-height:650px;
+	overflow: auto;
+}
+#ldrboard img{
+	width:80%;
+	padding:10px auto; 
+}
+h6{
+	font-family: Comfortaa;
+}
+@media only screen and (max-width: 700px) {
+
+body{
+position: fixed;
+}
+#board{
+	top:100px;
+	text-align: center;
+	width:90%;
+	margin-left: 5%;
+	height:90%;
+	background-color: rgba(90, 90, 90, .55);
+	position: center;
+	border-radius: 10px 10px 10px 10px;
+/*	height:280px;*/
+	float:left;
+}
+#startbtn{
+	margin: 6% 0% 6% 0%;
+	width: 100%;
+}
+h1{
+	font-size: 25px;
+}
+#question{
+	margin:-2vh 0vh -1vh 0vh;
+}
+#answers .btn{
+	display:block;
+/*	width:35% ;*/
+	margin: 3vh 0vh 3vh 0vh;
+}
+.answers{
+	margin-top:8%;
+}
+.progress{
+	margin-left: 15%;
+}
+#postbtns{
+	position:relative;
+	bottom:-10px;
+}
+#ldrboard{
+	text-align: center;
+	background-color: rgba(90, 90, 90, .55);
+	position: relative;
+	border-radius: 10px 10px 10px 10px;
+	height:110%;
+	float:left;
+	color:rgba(10, 10, 10, .9);
+	top:15px;
+	right:-40px;
+	font-family:Bowlby One;
+	display:none;
+	max-height:96vh;
+	width:75vw;
+	overflow: auto;
+}
+#ldrboard img{
+	max-height:19vh;
+}
+#dipdiv{
+	margin-top:35%;
+}
+#findiv img{
+	max-height: 15vh;
+}
+#postbtns{
+	margin-left:0px;
+}
+#name{
+	width:100%;
+}
+#postbtns .btn{
+width:100%;
+}

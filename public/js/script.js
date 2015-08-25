@@ -71,7 +71,7 @@ var playerRank=function(){
 		return("<h3 id='textDisplay'>You're not Neil deGrasse Tyson. You are canadian classic rock legend Neil Young!</h3><img class='endImg' src='http://www.theuncool.com/wp-content/uploads/2012/11/neilyounghat.jpg'>")
 	}else if(playerScore<=28){
 		return("<h3 id='textDisplay'>Nope. You're definitely not NDT. You are Young Neil from Scott Pilgim vs. The World!</h3><img class='endImg' src='http://img2.wikia.nocookie.net/__cb20100809173646/scottpilgrim/images/0/06/Box-neil.jpg'>")
-	}else if(playerScore<=32){
+	}else if(playerScore>28){
 		return("<h3 id='textDisplay'>Sorry, but you're not even a Neil. You're Niall from 1D. Sucks to suck.</h3><img class='endImg' src='http://datingtheweb.com/wp-content/uploads/2014/02/one-direction-of-niall-horan.jpg'>")
 	}
 };
@@ -150,9 +150,16 @@ $('#savebtn').on('click',function(){
 		$('#ldrboard').fadeIn(2000);
 			};
 	if(!clkys){
-	$('#ldrboard').append("<div pr="+playerScore+"><img src="+pic+"><h6>"+name+" - Score-"+playerScore+"</h6></div>");
+	$('#leaders').prepend("<div pr="+playerScore+"><img src="+pic+"><h6>"+name+" - Score-"+playerScore+"</h6></div>");
 	// $('#ldrboard').children('div').attr('pr').isotope({ sortBy: [pr] });
 	clkys++;
+	var leader = $.ajax({
+		url:'/leaderboard',
+		method: 'GET',
+		data: {'name':name,'picture':pic,'score':playerScore}
+	}).done(function(){
+		console.log(leader)
+	});
 
 	};
 });

@@ -59,6 +59,11 @@
 			  <h4>Recent results.</h4>
 			  <h6>(Golf scoring.)</h6>
 			  <hr>
+			  <div id="leaders">
+			  <% leaders.forEach(function(leader){ %>
+			  	<div pr=<%= leader.score %>><img src=<%= leader.picture %>><h6><%= leader.name %> - Score-<%= leader.score %></h6></div>
+			  <% }) %>
+			  </div>
 			  </div>
 	  </div>
 	</div>

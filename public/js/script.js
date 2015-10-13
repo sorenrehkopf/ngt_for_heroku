@@ -76,17 +76,6 @@ var playerRank=function(){
 	}
 };
 
-// var $grid = $('#ldrboard').isotope({
-//   getSortData: {
-//     name: '#pr', $('#ldrboard').children('h6').attr('pr');
-//     category: '[score]', 'pr';
-//     // weight: function( itemElem ) { // function
-//     //   var weight = $( itemElem ).find('.weight').text();
-//     //   return parseFloat( weight.replace( /[\(\)]/g, '') );
-//     // }
-//   }
-// });
-
 
 $('#startbtn').on('click',function(e){
 	e.preventDefault();

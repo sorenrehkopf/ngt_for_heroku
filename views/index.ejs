@@ -45,8 +45,9 @@
 				<button class="btn btn-default" id="rptbtn">Test again!</button>
 				</div>
 				<div>
+				<input style="display:block;" type='text' class='form control' placeholder='Your name!' id="name">
 				<button class='btn btn-default' id="savebtn">Save your rank!</button>
-				<input type='text' class='form control' placeholder='Your name!' id="name">
+				
 				</div>
 				<!-- <div class="fb-share-button" data-href="https:sorenrehkopf.github.io" data-layout="button"></div> -->
 				</div>
@@ -56,13 +57,13 @@
 				</div>
 				</div>
 			  <div class="col-sm-2" id="ldrboard">
-			  <h4>Recent results.</h4>
+			  <h4>Top Results.</h4>
 			  <h6>(Golf scoring.)</h6>
 			  <hr>
 			  <div id="leaders">
-			  <% leaders.forEach(function(leader){ %>
-			  	<div pr=<%= leader.score %>><img src=<%= leader.picture %>><h6><%= leader.name %> - Score-<%= leader.score %></h6></div>
-			  <% }) %>
+			  <% leaders.forEach(function(leader){ if(leader.picture){ %>
+			  	<div pr=<%= leader.score %>><img src=<%= leader.picture === "http://datingtheweb.com/wp-content/uploads/2014/02/one-direction-of-niall-horan.jpg"? '/assets/photos/nh.jpg':leader.picture %>><h6><%= leader.name %> - Score-<%= leader.score %></h6></div>
+			  <% }}) %>
 			  </div>
 			  </div>
 	  </div>

@@ -4,31 +4,31 @@
 	to { background-position:  100% 0; }
 }
 .bkgrnd1{
-	background-image:url(http://walldiskpaper.com/wp-content/uploads/2014/10/Space-Wallpaper-1920x1080.jpg);
+	background-image:url(/assets/photos/bg1.jpg);
 	background-position: 0px 0px;
 	background-size: 2500px 1080px;
 	animation: animatedBackground 150s linear infinite alternate;
 }
 .bkgrnd2{
-	background-image:url(http://www.hdwallsource.com/img/2015/6/stunning-space-wallpaper-45214-46411-hd-wallpapers.jpg);
+	background-image:url(/assets/photos/bg2.jpg);
 	background-position: 0px 0px;
 	background-size: 2500px 1080px;
 	animation: animatedBackground 150s linear infinite alternate;
 }
 .bkgrnd3{
-	background-image:url(http://cdn.wonderfulengineering.com/wp-content/uploads/2014/04/space-wallpapers-2.jpg);
+	background-image:url(/assets/photos/bg3.jpg);
 	background-position: 0px 0px;
 	background-size: 2500px 1080px;
 	animation: animatedBackground 150s linear infinite alternate;
 }
 .bkgrnd4{
-	background-image:url(http://images6.fanpop.com/image/photos/32800000/space-wallpaper-space-32897723-1920-1080.jpg);
+	background-image:url(/assets/photos/bg4.jpg);
 	background-position: 0px 0px;
 	background-size: 2500px 1080px;
 	animation: animatedBackground 150s linear infinite alternate;
 }
 .bkgrnd5{
-	background-image:url(https://newevolutiondesigns.com/images/freebies/space-wallpaper-5.jpg);
+	background-image:url(/assets/photos/bg5.jpg);
 	background-position: 0px 0px;
 	background-size: 2500px 1080px;
 	animation: animatedBackground 150s linear infinite alternate;
@@ -221,5 +221,5 @@ h1{
 	width:100%;
 }
 #postbtns .btn{
-width:100%;
+	width:100%;
 }

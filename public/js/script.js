@@ -147,7 +147,6 @@ $('#savebtn').on('click',function(){
 			};
 	if(!clkys){
 	$('#leaders').prepend("<div pr="+playerScore+"><img src="+pic+"><h6>"+name+" - Score-"+playerScore+"</h6></div>");
-	// $('#ldrboard').children('div').attr('pr').isotope({ sortBy: [pr] });
 	clkys++;
 	var leader = $.ajax({
 		url:'/leaderboard',
